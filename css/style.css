@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Hero img */
+.hero-img {
+  padding: 60px;
+  background-image: url(../img/Fire+Pit+Sky.jpg);
+  background-size: cover;
+  /* height: 2000px; */
+  width: 100%;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-top: 40px;
+}
+.main-menu a {
+  color: rgba(232, 242, 241, 0.7);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.main-menu a:hover {
+  color: white;
+}
+.main-menu img {
+  width: 130px;
+}
+
+.close-responsive {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 70px;
+  color: #171717;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.presentation h2 {
+  font-size: 60px;
+  color: white;
+  text-transform: uppercase;
+}
+.presentation h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.TonyandJoeLogo {
+  max-width: 600px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.actions button {
+  padding: 20px 40px 20px 40px;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 3px white solid;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.actions button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Section menu */
+.menu {
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;
+}
+.menu img {
+  max-width: 500px;
+  cursor: pointer;
+}
+
+/* Section reservation */
+.reservation {
+  background-color: #F5F5F5;
+  text-align: center;
+  /* height: 396px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.reservation .reservation-title h2 {
+  text-transform: uppercase;
+  font-size: 33px;
+}
+.reservation .reservation-title h3 {
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.reservation button {
+  padding: 15px 30px;
+  border-radius: 20px;
+  background-color: #3B3B3B;
+  color: white;
+  cursor: pointer;
+  margin-top: 30px;
+  border: none;
+}
+
+/* Swiper */
+.swiper {
+  width: 100%;
+  min-height: 100%;
+}
+
+.swiper-wrapper {
+  height: 100%;
+}
+
+.swiper-slide {
+  height: 100%;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+
+/* Prefooter */
+.prefooter {
+  background-color: #1F1F1F;
+  padding: 40px;
+  /* height: 300px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.social {
+  text-align: center;
+}
+.social i {
+  font-size: 40px;
+  padding: 10px;
+  color: #F5F5F5;
+}
+
+.restaurants {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.restaurants img {
+  width: 300px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #171717;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F5F5F5;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 300px) {
+  .TonyandJoeLogo {
+    width: 50px;
+  }
+  .menu img {
+    width: 50px;
+  }
+}
+@media (max-width: 600px) {
+  .TonyandJoeLogo {
+    width: 300px;
+  }
+  .menu img {
+    width: 300px;
+  }
+}
+@media (max-width: 1024px) {
+  .tonyandjoelogonav {
+    display: none;
+  }
+  .close-responsive {
+    display: block;
+  }
+  .main-menu {
+    flex-direction: column;
+    padding: 10px;
+    background-color: #3B3B3B;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    /* height: 100vh; */
+    transition: 0.6s;
+  }
+  .main-menu a {
+    font-size: 30px;
+  }
+  .main-menu-responsive {
+    left: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
